@@ -1,4 +1,4 @@
-export default function Projects({ name, img, alt, type, link, year, tools, priority = false }) {
+export default function Projects({ name, img, alt, type, priority = false }) {
   return (
     <div>
       <div
@@ -15,12 +15,7 @@ export default function Projects({ name, img, alt, type, link, year, tools, prio
         />
       </div>
       <div className="mt-4">
-        <div className="flex space-x-2 mb-3">
-            <p className="rounded-full bg-transparent border border-secondary-600 flex justify-center items-center px-4 py-1 text-secondary-600 text-body-4 2xl:text-3xl">{year}</p>
-            <p className="rounded-full bg-transparent border border-secondary-600 flex justify-center items-center px-4 py-1 text-secondary-600 text-body-4 2xl:text-3xl">{tools}</p>
-        </div>
         <div className="2xl:space-y-3">
-
         <h3 className="text-works-title 2xl:text-5xl font-medium uppercase text-primary-200">
           {name}
         </h3>

@@ -3,6 +3,7 @@ import { useEffect, useState, useRef } from "react";
 import { ScrollTrigger } from "gsap/all";
 import { gsap } from "gsap";
 import Heading from "../ui/Heading";
+import { siteConfig } from "../../data";
 
 export default function Contact() {
   const [time, setTime] = useState(new Date().toLocaleTimeString());
@@ -82,6 +83,55 @@ export default function Contact() {
           <h3 ref={heading} className="max-w-lg 2xl:max-w-3xl text-heading-3 2xl:text-7xl font-semibold leading-tight translate-y-10 opacity-0">
             Votre site perd de l'argent chaque jour. Découvrez combien en 30 minutes.
           </h3>
+          
+          {/* WhatsApp CTA Prioritaire */}
+          <div className="mt-10 mb-12 p-8 bg-[#25D366]/10 border-2 border-[#25D366] rounded-xl">
+            <div className="flex flex-col items-center text-center gap-6">
+              <div className="flex items-center gap-3">
+                <span className="text-4xl">💬</span>
+                <h4 className="text-heading-3 font-bold text-accent-300">Option Rapide</h4>
+              </div>
+              <p className="text-body-2 text-accent-200 max-w-xl">
+                Discutez avec nous maintenant sur WhatsApp. Réponse garantie en moins d'1 heure.
+              </p>
+              <a
+                href={`${siteConfig.whatsapp}?text=${encodeURIComponent("Bonjour, je veux un audit gratuit de mon site 🚀")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative px-10 py-5 bg-[#25D366] text-white font-bold text-body-1 rounded-full hover:bg-[#20BA5A] transition-all duration-300 hover:scale-105 shadow-2xl flex items-center gap-4"
+              >
+                <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                </svg>
+                <span>Parler Maintenant sur WhatsApp</span>
+                <span className="absolute -top-1 -right-1 flex h-4 w-4">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-4 w-4 bg-green-500"></span>
+                </span>
+              </a>
+              <div className="flex items-center gap-2 text-body-3 text-[#25D366] font-semibold">
+                <span>✓</span>
+                <span>Réponse sous 1 heure</span>
+                <span className="mx-2">•</span>
+                <span>✓</span>
+                <span>100% Gratuit</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Séparateur */}
+          <div className="flex items-center gap-4 my-8">
+            <div className="flex-1 h-[1px] bg-accent-100/30"></div>
+            <span className="text-body-2 text-accent-100/60 font-semibold">OU</span>
+            <div className="flex-1 h-[1px] bg-accent-100/30"></div>
+          </div>
+
+          {/* Formulaire détaillé */}
+          <div className="mb-6">
+            <h4 className="text-body-1 font-semibold text-accent-300 mb-2">Préférez envoyer un brief détaillé ?</h4>
+            <p className="text-body-3 text-accent-200/70">Remplissez le formulaire ci-dessous, nous vous répondrons sous 24h.</p>
+          </div>
+          
           <form
             name="contact"
             action="/contact"
@@ -191,43 +241,33 @@ export default function Contact() {
             <h4 className="text-body-1 2xl:text-4xl font-semibold">Contact Direct</h4>
             <div className="flex flex-col space-y-3 text-body-2 2xl:text-3xl">
               <a
-                href="mailto:contact@babastudio.com"
-                className="group relative w-fit cursor-pointer"
+                href={siteConfig.whatsapp}
+                className="group relative w-fit cursor-pointer flex items-center gap-2 text-[#25D366] font-semibold"
                 target="_blank"
                 rel="noreferrer"
               >
-                <span>contact@babastudio.com</span>
-                <span className="absolute bottom-0 left-0 h-[0.12em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                </svg>
+                <span>{siteConfig.whatsappNumber}</span>
+                <span className="absolute bottom-0 left-0 h-[0.12em] w-0 rounded-full bg-[#25D366] duration-300 ease-in-out group-hover:w-full"></span>
               </a>
               <a
-                href="https://wa.me/33123456789"
+                href={`mailto:${siteConfig.email}`}
                 className="group relative w-fit cursor-pointer"
                 target="_blank"
                 rel="noreferrer"
               >
-                <span>WhatsApp - Réponse rapide</span>
+                <span>{siteConfig.email}</span>
                 <span className="absolute bottom-0 left-0 h-[0.12em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
               </a>
-             
             </div>
           </div>
           <div className="space-y-3 ">
-            <h4 className="text-body-1 2xl:text-4xl font-semibold">Nos Projets</h4>
+            <h4 className="text-body-1 2xl:text-4xl font-semibold">Suivez-nous</h4>
             <div className="space-y-3 text-body-2 2xl:text-3xl">
               <a
-                href="https://github.com/babastudio"
-                className="group flex items-center space-x-2"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Icon icon="pajamas:github" color="#666" />
-                <div className="relative">
-                  <span>Github</span>
-                  <span className="absolute bottom-0 left-0 h-[0.10em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
-                </div>
-              </a>
-              <a
-                href="https://www.linkedin.com/company/babastudio"
+                href={siteConfig.social.linkedin}
                 className="group group flex w-fit items-center space-x-2"
                 target="_blank"
                 rel="noreferrer"
@@ -239,7 +279,7 @@ export default function Contact() {
                 </div>
               </a>
               <a
-                href="https://x.com/babastudio"
+                href={siteConfig.social.twitter}
                 className="group group flex w-fit items-center space-x-2"
                 target="_blank"
                 rel="noreferrer"

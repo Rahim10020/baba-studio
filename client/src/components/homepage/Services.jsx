@@ -12,11 +12,6 @@ export default function Services() {
           description="Pas des sites jolis. Des systèmes qui génèrent des clients qualifiés automatiquement."
           items={skills.expertise}
         />
-        <ServiceUi
-          title="Comment on le fait."
-          description="Notre stack technique éprouvée pour créer des systèmes d'acquisition fiables, rapides et scalables qui fonctionnent 24/7."
-          items={skills.tools}
-        />
       </div>
     </section>
   );

@@ -14,6 +14,7 @@ import Works from "./components/homepage/Works";
 import Contact from "./components/homepage/Contact";
 import Footer from "./components/ui/Footer";
 import ProjectPage from "./components/ProjectPage";
+import WhatsAppButton from "./components/ui/WhatsAppButton";
 import { siteConfig } from "./data";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -68,6 +69,8 @@ const HomePage = () => {
           <Contact />
         </main>
         <Footer />
+        {/* Bouton WhatsApp sticky visible partout */}
+        <WhatsAppButton />
       </div>
     </>
   );
