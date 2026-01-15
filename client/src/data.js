@@ -6,7 +6,7 @@ import circuitsImg from "./assets/images/circuits.webp";
 
 export const siteConfig = {
   name: "BabaStudio",
-  title: "BabaStudio - Systèmes Web & Mobile Qui Génèrent des Clients 24/7",
+  title: "BabaStudio - On code des sites qui génèrent des Clients 24/7",
   description: "On transforme votre business en machine à clients qualifiés. Sites web, applications mobiles et systèmes automatisés qui travaillent pendant que vous dormez.",
   url: "https://babastudio.vercel.app",
   email: "contact@babastudio.com",
