@@ -11,7 +11,7 @@ export default function Projects({ name, img, alt, type, priority = false }) {
           width="800"
           height="600"
           loading={priority ? "eager" : "lazy"}
-          fetchPriority={priority ? "high" : "auto"}
+          fetchpriority={priority ? "high" : "auto"}
         />
       </div>
       <div className="mt-4">

@@ -230,7 +230,6 @@ export default function ProjectPage() {
       <Helmet>
         <title>{project.name} | {siteConfig.name}</title>
         <meta name="description" content={project.description} />
-        <meta name="keywords" content={project.tools.join(", ")} />
         <link rel="canonical" href={`${siteConfig.url}/projects/${project.slug}`} />
         <meta property="og:title" content={`${project.name} | ${siteConfig.name}`} />
         <meta property="og:description" content={project.description} />
@@ -246,7 +245,6 @@ export default function ProjectPage() {
             "description": project.description,
             "author": { "@type": "Person", "name": siteConfig.name },
             "dateCreated": project.year,
-            "keywords": project.tools.join(", "),
             "url": `${siteConfig.url}/projects/${project.slug}`,
           })}
         </script>
