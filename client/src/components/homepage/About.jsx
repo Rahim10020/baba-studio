@@ -1,11 +1,11 @@
 import { useEffect, useRef } from "react";
-import profileImg from "/src/assets/images/profile.webp";
+import problemeImg from "/src/assets/images/probleme.png";
 import { ScrollTrigger } from "gsap/all";
 import { gsap } from "gsap";
 import Heading from "../ui/Heading";
 
 export default function About() {
-  const profile = useRef(null);
+  const probleme = useRef(null);
   const aboutSection = useRef(null);
   const heading = useRef(null);
   const body = useRef(null);
@@ -39,13 +39,13 @@ export default function About() {
       <div className="mt-10 flex flex-col items-start gap-8 md:flex-row lg:gap-10 ">
         <div className="top-28 overflow-hidden rounded-md md:sticky md:w-1/2">
           <img
-            ref={profile}
+            ref={probleme}
             loading="lazy"
             className="aspect-square h-auto w-full rounded-md object-cover object-center md:aspect-auto"
-            src={profileImg}
+            src={problemeImg}
             width="600"
-            height="800"
-            alt="Illustration représentant les problèmes business non résolus"
+            height="500"
+            alt="Processus pour résoudre les problèmes"
           />
         </div>
         <div className="top-20 sm:sticky md:top-28 lg:top-32 md:w-1/2">
@@ -60,19 +60,19 @@ export default function About() {
               Chaque jour, des clients potentiels visitent votre site.
               <br></br>
               <br></br>
-              Et chaque jour, 95% d'entre eux partent sans laisser de trace. Pas de contact. Pas de vente. Pas de rendez-vous.
+              Et chaque jour, 95% d&apos;entre eux partent sans laisser de trace. Pas de contact. Pas de vente. Pas de rendez-vous.
               <br></br>
               <br></br>
               Pendant ce temps, vos concurrents avec des systèmes bien conçus convertissent ces mêmes visiteurs en clients payants.
               <br></br>
               <br></br>
-              Le problème n'est pas votre produit. C'est votre système d'acquisition.
+              Le problème n&apos;est pas votre produit. C&apos;est votre système d&apos;acquisition.
               <br></br>
               <br></br>
-              <strong>Sans système, vous ne contrôlez rien.</strong> Vous attendez que le téléphone sonne. Vous espérez que quelqu'un vous contacte.
+              <strong>Sans système, vous ne contrôlez rien.</strong> Vous attendez que le téléphone sonne. Vous espérez que quelqu&apos;un vous contacte.
               <br></br>
               <br></br>
-              C'est exactement ce que nous réparons.
+              C&apos;est exactement ce que nous réparons.
             </p>
           </div>
         </div>

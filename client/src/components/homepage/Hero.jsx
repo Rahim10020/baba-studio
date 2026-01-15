@@ -54,7 +54,7 @@ export default function Hero() {
       <div className="z-10 flex flex-col w-full items-center text-title 2xl:text-[10vw] 2xl:space-y-16 font-bold  uppercase text-accent-300">
         <div className="title xl:py-5">
           <h1 ref={(el) => (titles.current[0] = el)} className=" overflow-visible">
-            On code des sites qui génèrent des Clients 24/7
+            On code des sites qui rapportent des Clients 24/7
           </h1>
         </div>
         
