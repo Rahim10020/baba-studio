@@ -24,7 +24,6 @@ export default function Works({ forwardedRef }) {
                 name={projects[0].name}
                 type={projects[0].type}
                 year={projects[0].year}
-                tools={projects[0].tools.join(" • ")}
                 priority={true}
               />
             </Link>
@@ -42,7 +41,6 @@ export default function Works({ forwardedRef }) {
                 name={projects[1].name}
                 type={projects[1].type}
                 year={projects[1].year}
-                tools={projects[1].tools.join(" • ")}
               />
             </Link>
           </div>
@@ -58,7 +56,6 @@ export default function Works({ forwardedRef }) {
                 name={projects[2].name}
                 type={projects[2].type}
                 year={projects[2].year}
-                tools={projects[2].tools.join(" • ")}
               />
             </Link>
           </div>
@@ -74,7 +71,6 @@ export default function Works({ forwardedRef }) {
                 name={projects[3].name}
                 type={projects[3].type}
                 year={projects[3].year}
-                tools={projects[3].tools.join(" • ")}
               />
             </Link>
           </div>
@@ -90,7 +86,6 @@ export default function Works({ forwardedRef }) {
                 name={projects[4].name}
                 type={projects[4].type}
                 year={projects[4].year}
-                tools={projects[4].tools.join(" • ")}
               />
             </Link>
           </div>
