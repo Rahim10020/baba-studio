@@ -11,7 +11,7 @@ export default function Works({ forwardedRef }) {
       className="nav-change overflow-hidden my-[10%]"
       aria-label="projects"
     >
-      <Heading title="Projects" />
+      <Heading title="Résultats" />
       <div className="mt-10 grid grid-cols-1 gap-16 gap-y-10 md:grid-cols-12">
         {/* Featured Project - Full Width */}
         {projects[0] && (

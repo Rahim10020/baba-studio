@@ -5,18 +5,16 @@ import { skills } from "../../data";
 export default function Services() {
   return (
     <section id="services" className="my-[10%]" aria-label="services">
-      <Heading title="services" />
+      <Heading title="la solution" />
       <div className="space-y-14">
         <ServiceUi
-          title="my expertises."
-          description="I focus on all things design and web related."
+          title="Ce que nous construisons."
+          description="Pas des sites jolis. Des systèmes qui génèrent des clients qualifiés automatiquement."
           items={skills.expertise}
         />
         <ServiceUi
-          title="my digital tool box."
-          description="These are my go to tech stack to make any 
-          projects happen. I am always eager of learning more about 
-          my current stack, and new tech that could expand my horizons."
+          title="Comment on le fait."
+          description="Notre stack technique éprouvée pour créer des systèmes d'acquisition fiables, rapides et scalables qui fonctionnent 24/7."
           items={skills.tools}
         />
       </div>
