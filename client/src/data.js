@@ -9,7 +9,7 @@ export const siteConfig = {
   title: "BabaStudio - On code des sites qui génèrent des Clients 24/7",
   description: "On transforme votre business en machine à clients qualifiés. Sites web, applications mobiles et systèmes automatisés qui travaillent pendant que vous dormez.",
   url: "https://babastudio.vercel.app",
-  email: "contact@babastudio.com",
+  email: "rahim100codeur@gmail.com",
   whatsapp: "https://wa.me/22891796115",
   whatsappNumber: "+228 91 79 61 15",
   social: {
@@ -47,7 +47,7 @@ export const projects = [
       coreInsight: "Le problème n'était pas le trafic. C'était l'absence totale de système entre 'visiteur' et 'client payant'."
     }
   },
-  
+
   {
     slug: "app-mobile-ecommerce",
     name: "App Mobile E-commerce avec Notifications Push",
@@ -66,7 +66,7 @@ export const projects = [
       whyItMatters: "Acquérir un nouveau client coûte 5x plus cher que de garder un client existant"
     }
   },
-  
+
   {
     slug: "plateforme-saas-reservation",
     name: "Plateforme SaaS de Réservation pour Salons",
@@ -85,7 +85,7 @@ export const projects = [
       whyItMatters: "Un système bien conçu remplace des heures de travail manuel"
     }
   },
-  
+
   {
     slug: "tunnel-vente-formation",
     name: "Tunnel de Vente pour Formation en Ligne",
@@ -104,7 +104,7 @@ export const projects = [
       whyItMatters: "Un bon tunnel vend pendant que vous dormez"
     }
   },
-  
+
   {
     slug: "site-vitrine-conversion",
     name: "Site Vitrine Haute Conversion - Architecte",
