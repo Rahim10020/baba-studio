@@ -36,7 +36,7 @@ export default function About() {
   return (
     <section ref={aboutSection} aria-label="about me">
       <Heading title="Le problème" />
-      <div className="mt-10 flex flex-col items-start gap-8 md:flex-row lg:gap-10 ">
+      <div className="mt-10 flex flex-col items-start gap-8 md:flex-row lg:gap-10">
         <div className="top-28 overflow-hidden rounded-md md:sticky md:w-1/2">
           <img
             ref={probleme}

@@ -28,41 +28,40 @@ export default function Hero() {
         duration: 3.25,
         ease: "power3.inOut"
       })
-      .to(
-        img.current,
-        { scale: 1, duration: 3.2, ease: "power4.inOut" },
-        "-=3.1"
-      )
-      .to(
-        titles.current,
-        { y: 0, duration: 2, ease: "power4.inOut" },
-        "-=2.5"
-      )
-      .fromTo(
-        scroll.current,
-        { opacity: 0 },
-        { opacity: 1, duration: 1, ease: "out" },
-        "-=2"
-      );
+        .to(
+          img.current,
+          { scale: 1, duration: 3.2, ease: "power4.inOut" },
+          "-=3.1"
+        )
+        .to(
+          titles.current,
+          { y: 0, duration: 2, ease: "power4.inOut" },
+          "-=2.5"
+        )
+        .fromTo(
+          scroll.current,
+          { opacity: 0 },
+          { opacity: 1, duration: 1, ease: "out" },
+          "-=2"
+        );
     });
 
     return () => ctx.revert();
   }, []);
 
   return (
-    <section id="hero" className="hero relative flex w-full h-screen select-none items-center justify-center" aria-label="hero">
-      <div className="z-10 flex flex-col w-full items-center text-title 2xl:text-[10vw] 2xl:space-y-16 font-bold  uppercase text-accent-300">
+    <section id="hero" className="flex w-full h-screen select-none items-center justify-center" aria-label="hero">
+      <div className="z-10 w-full items-center text-title font-bold  uppercase text-accent-300">
         <div className="title xl:py-5">
           <h1 ref={(el) => (titles.current[0] = el)} className=" overflow-visible">
-            On code des sites qui rapportent des Clients 24/7
+            On code des sites qui vous rapportent des Clients 24/7
           </h1>
         </div>
-        
-        
       </div>
+
       <div
         ref={imgContainer}
-        className="absolute mx-auto  w-[55%] overflow-hidden rounded-md"
+        className="absolute mx-auto w-[55%] overflow-hidden rounded-md"
       >
         <img
           ref={img}
