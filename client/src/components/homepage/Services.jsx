@@ -12,6 +12,7 @@ export default function Services() {
           description="Pas des sites jolis. Des systèmes qui génèrent des clients qualifiés automatiquement."
           items={skills.expertise}
         />
+
       </div>
     </section>
   );
