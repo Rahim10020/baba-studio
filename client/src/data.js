@@ -126,9 +126,21 @@ export const projects = [
 ];
 
 export const skills = {
-  expertise: "Systèmes d'Acquisition",
-  produit: "Apps Mobile Scalables",
-  recompense: "Sites qui Convertissent"
+  expertise: [
+    "Systèmes d'Acquisition",
+    "Automatisation & CRM",
+    "Funnels de conversion"
+  ],
+  produit: [
+    "Apps Mobile Scalables",
+    "APIs & Intégrations",
+    "Performance & UX"
+  ],
+  recompense: [
+    "Sites qui Convertissent",
+    "Landing pages optimisées",
+    "SEO & Analytics"
+  ]
 };
 
 // Section témoignages - À remplir avec de vrais clients

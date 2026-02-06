@@ -13,6 +13,12 @@ export default function Services() {
           items={skills.expertise}
         />
 
+        <ServiceUi
+          title="Ce que nous construisons."
+          description="Pas des sites jolis. Des systèmes qui génèrent des clients qualifiés automatiquement."
+          items={skills.expertise}
+        />
+
       </div>
     </section>
   );
